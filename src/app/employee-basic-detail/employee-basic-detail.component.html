@@ -1,62 +1,70 @@
-<div class="panel panel-info" 
-  *ngFor="let employee of employees">
-    <div class="panel-heading">
-      <h3 class="panel-title">{{employee.fullName}}</h3>
+<div *ngIf='isServerError'>
+  <div style="text-align:center">
+    <div class="alert alert-danger">
+      <h3>Server Failure.Please try after some time !!!</h3>
     </div>
-    <div class="panel-body">
-        <div class="col-xs-10">
-            <div class="row vertical-align">
-                 <div class="col-xs-4">
-                    <img class="imageClass" [src]="'assets/images/prateek.png'"/>
-                 </div>
-                 <div class="col-xs-8">
-                     <div class="row">
-                         <div class="col-xs-6">
-                           Employee Id
-                         </div>
-                         <div class="col-xs-6">
-                           :{{employee.employeeContractorId}}
-                        </div>
-                     </div>
-                     <div class="row">
-                      <div class="col-xs-6">
-                        Contractor Company
-                      </div>
-                      <div class="col-xs-6">
-                        :{{employee.companyName}}
-                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      Contractor Company Id
-                    </div>
-                    <div class="col-xs-6">
-                      :{{employee.companyId}}
-                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-6">
-                    Department
-                  </div>
-                  <div class="col-xs-6">
-                    :{{employee.departmentName}}
-                 </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6">
-                  Projects
-                </div>
-                <div class="col-xs-6">
-                  :{{employee.projects}}
-               </div>
+    <img [src]="'assets/images/server-failure.gif'" />
+  </div>
+</div>
+
+<div class="panel panel-info" *ngFor="let employee of employees">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{employee.fullName}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="col-xs-10">
+      <div class="row vertical-align">
+        <div class="col-xs-4">
+          <img class="imageClass" [src]="'assets/images/prateek.png'" />
+        </div>
+        <div class="col-xs-8">
+          <div class="row">
+            <div class="col-xs-6">
+              Employee Id
             </div>
-            <div class="row">
-              <div class="col-xs-6">
-                Phone
-              </div>
-              <div class="col-xs-6">
-                :{{employee.phoneNumber}}
-             </div>
+            <div class="col-xs-6">
+              :{{employee.employeeContractorId}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Contractor Company
+            </div>
+            <div class="col-xs-6">
+              :{{employee.companyName}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Contractor Company Id
+            </div>
+            <div class="col-xs-6">
+              :{{employee.companyId}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Department
+            </div>
+            <div class="col-xs-6">
+              :{{employee.departmentName}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Projects
+            </div>
+            <div class="col-xs-6">
+              :{{employee.projects}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Phone
+            </div>
+            <div class="col-xs-6">
+              :{{employee.phoneNumber}}
+            </div>
           </div>
           <div class="row">
             <div class="col-xs-6">
@@ -64,42 +72,34 @@
             </div>
             <div class="col-xs-6">
               :{{employee.email}}
-           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-6">
-            Address
-          </div>
-          <div class="col-xs-6">
-            :{{employee.address}}
-         </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-6">
-          State
-        </div>
-        <div class="col-xs-6">
-          :{{employee.state}}
-       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6">
-        Country
-      </div>
-      <div class="col-xs-6">
-        :{{employee.country}}
-     </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-6">
-      Employee Id
-    </div>
-    <div class="col-xs-6">
-      :{{employee.employeeContractorId}}
-   </div>
-</div>
-                </div>
             </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Address
+            </div>
+            <div class="col-xs-6">
+              :{{employee.address}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              State
+            </div>
+            <div class="col-xs-6">
+              :{{employee.state}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Country
+            </div>
+            <div class="col-xs-6">
+              :{{employee.country}}
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>

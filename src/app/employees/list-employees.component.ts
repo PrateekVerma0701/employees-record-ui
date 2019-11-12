@@ -17,9 +17,9 @@ export class ListEmployeesComponent implements OnInit {
       email: 'mark@infotech.com',
       phoneNumber: 8967452308,
       dateOfBirth: new Date('10/25/1988'),
-      department:'IT',
+      department: 'IT',
       isActive: true,
-      photoPath:'assets/images/mark.png'
+      photoPath: 'assets/images/mark.png'
     },
     {
       id: 25882,
@@ -29,9 +29,9 @@ export class ListEmployeesComponent implements OnInit {
       email: 'mary@infotech.com',
       phoneNumber: 9634267829,
       dateOfBirth: new Date('09/24/1991'),
-      department:'Sales',
+      department: 'Sales',
       isActive: true,
-      photoPath:'assets/images/mary.png'
+      photoPath: 'assets/images/mary.png'
     },
     {
       id: 46890,
@@ -41,9 +41,9 @@ export class ListEmployeesComponent implements OnInit {
       email: 'john@infotech.com',
       phoneNumber: 7452345671,
       dateOfBirth: new Date('11/18/1993'),
-      department:'Marketing',
+      department: 'Marketing',
       isActive: true,
-      photoPath:'assets/images/john.png'
+      photoPath: 'assets/images/john.png'
     }
   ];
 

@@ -9,12 +9,14 @@ import { EmployeeBasicDetailService } from '../employee-basic-detail.service';
 export class EmployeeBasicDetailComponent implements OnInit {
 
   public employees = [];
+  public isServerError = false
 
   constructor(private _employeeService: EmployeeBasicDetailService) { }
 
   ngOnInit() {
     this._employeeService.getEmployees()
-    .subscribe(data => this.employees = data);
+      .subscribe(data => this.employees = data,
+        error => this.isServerError = true);
   }
 
 }

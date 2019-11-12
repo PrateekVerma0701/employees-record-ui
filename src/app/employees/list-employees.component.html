@@ -1,78 +1,77 @@
-<div class="panel panel-info" 
-  *ngFor="let employee of employees">
+<div class="panel panel-info" *ngFor="let employee of employees">
     <div class="panel-heading">
-      <h3 class="panel-title">{{employee.name}}</h3>
+        <h3 class="panel-title">{{employee.name}}</h3>
     </div>
     <div class="panel-body">
         <div class="col-xs-10">
             <div class="row vertical-align">
-                 <div class="col-xs-4">
-                    <img class="imageClass" [src]="employee.photoPath"/>
-                 </div>
-                 <div class="col-xs-8">
+                <div class="col-xs-4">
+                    <img class="imageClass" [src]="employee.photoPath" />
+                </div>
+                <div class="col-xs-8">
                     <div class="row">
                         <div class="col-xs-6">
-                          Gender
+                            Gender
                         </div>
                         <div class="col-xs-6">
-                          :{{employee.gender}}
-                       </div>
-                    </div>
-                     <div class="row">
-                         <div class="col-xs-6">
-                           Employee Id
-                         </div>
-                         <div class="col-xs-6">
-                           :{{employee.id}}
+                            :{{employee.gender}}
                         </div>
-                     </div>
-                     <div class="row">
-                        <div class="col-xs-6">
-                          Date Of Birth
-                        </div>
-                        <div class="col-xs-6">
-                          :{{employee.dateOfBirth | date}}
-                       </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                          Contact Preference
+                            Employee Id
                         </div>
                         <div class="col-xs-6">
-                          :{{employee.contactPreference}}
-                       </div>
+                            :{{employee.id}}
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                          Phone
+                            Date Of Birth
                         </div>
                         <div class="col-xs-6">
-                          :{{employee.phoneNumber}}
-                       </div>
+                            :{{employee.dateOfBirth | date}}
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                          Email
+                            Contact Preference
                         </div>
                         <div class="col-xs-6">
-                          :{{employee.email}}
-                       </div>
+                            :{{employee.contactPreference}}
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                          Department
+                            Phone
                         </div>
                         <div class="col-xs-6">
-                          :{{employee.department}}
-                       </div>
+                            :{{employee.phoneNumber}}
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
-                          is Active
+                            Email
                         </div>
                         <div class="col-xs-6">
-                          :{{employee.isActive}}
-                       </div>
+                            :{{employee.email}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            Department
+                        </div>
+                        <div class="col-xs-6">
+                            :{{employee.department}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            is Active
+                        </div>
+                        <div class="col-xs-6">
+                            :{{employee.isActive}}
+                        </div>
                     </div>
                 </div>
             </div>
