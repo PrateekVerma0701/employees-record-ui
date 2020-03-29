@@ -11,12 +11,14 @@ import { EmployeeBasicDetailService } from './employee-basic-detail.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ListEmployeesComponent } from './employees/list-employees.component';
 import { CreateEmployeeComponent } from './employees/create-employee.component';
+import { CreateCompanyComponent } from './create-company/create-company.component';
 
 const appRoutes: Routes = [
-  { path: 'list', component: ListEmployeesComponent },
-  { path: 'create', component: CreateEmployeeComponent },
-  { path: 'basic', component: EmployeeBasicDetailComponent },
-  { path: '', redirectTo: '/list', pathMatch: 'full' }
+  { path: 'employees/list', component: ListEmployeesComponent },
+  { path: 'create/employee', component: CreateEmployeeComponent },
+  { path: 'employee/basic/detail', component: EmployeeBasicDetailComponent },
+  { path: 'create/company', component: CreateCompanyComponent },
+  { path: '', redirectTo: '/employees/list', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -24,7 +26,8 @@ const appRoutes: Routes = [
     AppComponent,
     EmployeeBasicDetailComponent,
     ListEmployeesComponent,
-    CreateEmployeeComponent
+    CreateEmployeeComponent,
+    CreateCompanyComponent
   ],
   imports: [
     BrowserModule,
