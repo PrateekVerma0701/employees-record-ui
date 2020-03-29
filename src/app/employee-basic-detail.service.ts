@@ -10,7 +10,7 @@ import { throwError } from 'rxjs';
 })
 export class EmployeeBasicDetailService {
 
-  private _url: string = "/api/v1.0/employee/basic/2311";
+  private _url: string = "/api/v1.0/employee/basic/1001";
 
   constructor(private http:HttpClient) { }
   
